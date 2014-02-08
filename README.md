@@ -29,8 +29,11 @@ If you need Cute grids to work in IE8 then this is possible with using respond.j
 
 **Link to your stylesheet**
 
+```
+
 <link rel="stylesheet" href="css/cutegrids.css">
 
+```
 **Structure layout as example below**
 
 ```html
