@@ -27,7 +27,8 @@ If you need Cute grids to work in IE8 then this is possible with using respond.j
 
 ##Instructions
 
-Based on cute columns enclosed in rows. Make sure that all cute columns add up to 12. Column names created first by cute- then number of columns then device name for example .cute-6-tablet.
+Based on cute columns enclosed in rows. Make sure that all cute columns add up to 12. 
+Column names are created first by using cute- then number of columns followed by device name for example .cute-6-tablet. 
 
 Example Below:
 ```html
