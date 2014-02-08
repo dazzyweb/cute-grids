@@ -61,5 +61,5 @@ If you hevve any questions or need some support using Cute Grids then please fee
 
 ##Copyright & License
 
-Copyright (C) 2013 Darren Newberry - Released under the MIT License.
+Copyright (C) 2014 Darren Newberry - Released under the MIT License.
 
