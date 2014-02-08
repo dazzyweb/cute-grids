@@ -25,11 +25,14 @@ Cute Grids is a responsive grid system full of features to help designers and de
 Works on Chrome, Safari, Firefox, Opera, IE9+.
 If you need Cute grids to work in IE8 then this is possible with using respond.js polyfill for Media queries and REM-unit-polyfill for rem untis .
 
-##Instructions
+##Getting Started
 
-Based on cute columns enclosed in rows. Make sure that all cute columns add up to 12. Column names created first by cute- then number of columns then device name for example .cute-6-tablet.
+**Link to your stylesheet**
 
-Example Below:
+<link rel="stylesheet" href="css/cutegrids.css">
+
+**Structure layout as example below**
+
 ```html
 
 
@@ -43,6 +46,7 @@ Example Below:
     </div>
 
 ```
+Wrap the cute columns in a row. Make sure that all cute columns add up to 12. Column classes named by cute- then number of columns followed by device name for example .cute-6-tablet. Column class device widths applies to the specified  device width and wider devices widths up. Below the device width size columns are stacked and stretched 100 percent.
 
 For full instructions using Cute Grids visit [www.cutegrids.com](http://www.cutegrids.com)
 
