@@ -45,7 +45,6 @@ Example Below:
 
 For full instructions using Cute Grids visit [www.cutegrids.com](http://www.cutegrids.com)
 
-
 ##Support
 
 If you hevve any questions or need some support using Cute Grids then please feel free to contact me.
