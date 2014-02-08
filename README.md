@@ -2,7 +2,7 @@
 
 ##About
 
-Cute Grids is a responsive grid system full of features to help designers and developers get started with their responsive layout.
+Cute Grids is a responsive grid system full of features to help designers and developers get started with their responsive layout. Visit [Cute Grids](http://www.cutegrids.com) for more details.
 
 ##Features
 
@@ -22,8 +22,8 @@ Cute Grids is a responsive grid system full of features to help designers and de
 
 ##Browser Support
 
-Works on Chrome, Safari, Firefox, Opera, IE9+
-If you need Cute grids to work in IE8 then this is possible with using respond.js polyfill for media css3 Media queries and REM-unit-polyfill for rem untis .
+Works on Chrome, Safari, Firefox, Opera, IE9+.
+If you need Cute grids to work in IE8 then this is possible with using respond.js polyfill for Media queries and REM-unit-polyfill for rem untis .
 
 ##Instructions
 
@@ -32,8 +32,9 @@ Based on cute columns enclosed in rows. Make sure that all cute columns add up t
 Example Below:
 ```html
 
+
     <div class="row">
-      <div class="cute-6-tablet"?
+      <div class="cute-6-tablet">
         content here....
       </div>
       <div class="cute-6-tablet">
