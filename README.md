@@ -1,5 +1,4 @@
 # Cute Grids
-==========
 
 ##About
 
@@ -32,20 +31,19 @@ Based on cute columns enclosed in rows. Make sure that all cute columns add up t
 
 Example Below:
 ```html
-<pre>
 
-    &lt;div class="row"&gt;
-      &lt;div class="cute-6-tablet"&gt;
+    <div class="row">
+      <div class="cute-6-tablet"?
         content here....
-      &lt;/div&gt;
-      &lt;div class="cute-6-tablet"&gt;
+      </div>
+      <div class="cute-6-tablet">
         content here....
-      &lt;/div&gt;
-    &lt;/div&gt;
-</pre>
+      </div>
+    </div>
+
 ```
 
-For full instructions using Cute Grids visit (http://www.cutegrids.com)
+For full instructions using Cute Grids visit [www.cutegrids.com](http://www.cutegrids.com)
 
 
 ##Support
