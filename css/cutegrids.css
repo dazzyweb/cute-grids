@@ -1,0 +1,431 @@
+/*
+*
+* Cute Grids v1.0
+* Copyright 2014 Darren Newberry
+* http://www.cutegrids.com
+* Free to use under the MIT Licence
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+/* Set the width of the row to what you like */
+.row {
+  width: 100%;
+  max-width:75rem; /* max Width of row, Change to what you like */
+  margin:0 auto;
+}
+
+/* Nested row 1 level down */
+/* Change the gutter if you like, currently set as 0.65em */
+.row .row {
+  margin-left: -0.65rem; /* minus left gutter for nested rows */
+  margin-right: -0.65rem; /* minus Right gutter for nested rows */
+  width: auto;
+}
+
+[class*='cute-'] {
+  float: left;
+  position: relative;
+  padding: 0.65rem; /* top, bottom, left and right padding for columns */
+  width:100%;
+}
+
+/* Remove this if you want the columns to float left when they overflow the row */
+
+[class*='cute-']:last-of-type {
+  float: right;
+}
+
+/* Clearfix */
+.row:after, .group:after, .clearfix:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.container:before,
+.container:after {
+  display: table;
+  content: " ";
+}
+
+.container:after {
+  clear: both;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+/* Grid classes for phone screen widths  */
+@media only screen {
+  .cute-1-phone { width: 8.3333333333333%; }
+  .cute-2-phone { width: 16.666666666667%; }
+  .cute-3-phone { width: 25%; }
+  .cute-4-phone { width: 33.333333333333%; }
+  .cute-5-phone { width: 41.666666666667%; }
+  .cute-6-phone { width: 50%; }
+  .cute-7-phone { width: 58.333333333333%; }
+  .cute-8-phone { width: 66.666666666667%; }
+  .cute-9-phone { width: 75%; }
+  .cute-10-phone { width: 83.333333333333%; }
+  .cute-11-phone { width: 91.666666666667%; }
+  .cute-12-phone { width: 100%; }
+
+  /* offset for phone size */
+  .cute-0-phone-offset { margin: 0; }
+  .cute-1-phone-offset { margin-left: 8.3333333333333%; }
+  .cute-2-phone-offset { margin-left: 16.666666666667%; }
+  .cute-3-phone-offset { margin-left: 25%; }
+  .cute-4-phone-offset { margin-left: 33.333333333333%; }
+  .cute-5-phone-offset { margin-left: 41.666666666667%; }
+  .cute-6-phone-offset { margin-left: 50%; }
+  .cute-7-phone-offset { margin-left: 58.333333333333%; }
+  .cute-8-phone-offset { margin-left: 66.666666666667%; }
+  .cute-9-phone-offset { margin-left: 75%; }
+  .cute-10-phone-offset { margin-left: 83.333333333333%; }
+  .cute-11-phone-offset { margin-left: 91.666666666667%; }
+
+  .cute-1-phone-push { left: 8.3333333333333%; }
+  .cute-2-phone-push { left: 16.666666666667%; }
+  .cute-3-phone-push { left: 25%; }
+  .cute-4-phone-push { left: 33.333333333333%; }
+  .cute-5-phone-push { left: 41.666666666667%; }
+  .cute-6-phone-push { left: 50%; }
+  .cute-7-phone-push { left: 58.333333333333%; }
+  .cute-8-phone-push { left: 66.666666666667%; }
+  .cute-9-phone-push { left: 75%; }
+  .cute-10-phone-push { left: 83.333333333333%; }
+  .cute-11-phone-push { left: 91.666666666667%; }
+
+  .cute-1-phone-pull { right: 8.3333333333333%; }
+  .cute-2-phone-pull { right: 16.666666666667%; }
+  .cute-3-phone-pull { right: 25%; }
+  .cute-4-phone-pull { right: 33.333333333333%; }
+  .cute-5-phone-pull { right: 41.666666666667%; }
+  .cute-6-phone-pull { right: 50%; }
+  .cute-7-phone-pull { right: 58.333333333333%; }
+  .cute-8-phone-pull { right: 66.666666666667%; }
+  .cute-9-phone-pull { right: 75%; }
+  .cute-10-phone-pull { right: 83.333333333333%; }
+  .cute-11-phone-pull { right: 91.666666666667%; }
+
+  .center-phone {
+    margin-left: auto;
+    margin-right:auto;
+    float:none !important;
+  }
+  .uncenter-phone {
+    margin-left: 0;
+    margin-right: 0;
+    float:left !important;
+  }
+  .uncenter-phone.right {
+    float:right !important;
+  }
+
+  [class*='cute-'].phone-reset {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; }
+}
+/* Grid classes for tablet screen widths  */
+@media only screen and (min-width: 48em) {
+  .cute-1-tablet { width: 8.3333333333333%; }
+  .cute-2-tablet { width: 16.666666666667%; }
+  .cute-3-tablet { width: 25%; }
+  .cute-4-tablet { width: 33.333333333333%; }
+  .cute-5-tablet { width: 41.666666666667%; }
+  .cute-6-tablet { width: 50%; }
+  .cute-7-tablet { width: 58.333333333333%; }
+  .cute-8-tablet { width: 66.666666666667%; }
+  .cute-9-tablet { width: 75%; }
+  .cute-10-tablet { width: 83.333333333333%; }
+  .cute-11-tablet { width: 91.666666666667%; }
+  .cute-12-tablet { width: 100%; }
+
+    /* offset for tablet screen widths */
+  .cute-0-tablet-offset { margin: 0; }
+  .cute-1-tablet-offset { margin-left: 8.3333333333333%; }
+  .cute-2-tablet-offset { margin-left: 16.666666666667%; }
+  .cute-3-tablet-offset { margin-left: 25%; }
+  .cute-4-tablet-offset { margin-left: 33.333333333333%; }
+  .cute-5-tablet-offset { margin-left: 41.666666666667%; }
+  .cute-6-tablet-offset { margin-left: 50%; }
+  .cute-7-tablet-offset { margin-left: 58.333333333333%; }
+  .cute-8-tablet-offset { margin-left: 66.666666666667%; }
+  .cute-9-tablet-offset { margin-left: 75%; }
+  .cute-10-tablet-offset { margin-left: 83.333333333333%; }
+  .cute-11-tablet-offset { margin-left: 91.666666666667%; }
+
+  .cute-1-tablet-push { left: 8.3333333333333%; }
+  .cute-2-tablet-push { left: 16.666666666667%; }
+  .cute-3-tablet-push { left: 25%; }
+  .cute-4-tablet-push { left: 33.333333333333%; }
+  .cute-5-tablet-push { left: 41.666666666667%; }
+  .cute-6-tablet-push { left: 50%; }
+  .cute-7-tablet-push { left: 58.333333333333%; }
+  .cute-8-tablet-push { left: 66.666666666667%; }
+  .cute-9-tablet-push { left: 75%; }
+  .cute-10-tablet-push { left: 83.333333333333%; }
+  .cute-11-tablet-push { left: 91.666666666667%; }
+
+  .cute-1-tablet-pull { right: 8.3333333333333%; }
+  .cute-2-tablet-pull { right: 16.666666666667%; }
+  .cute-3-tablet-pull { right: 25%; }
+  .cute-4-tablet-pull { right: 33.333333333333%; }
+  .cute-5-tablet-pull { right: 41.666666666667%; }
+  .cute-6-tablet-pull { right: 50%; }
+  .cute-7-tablet-pull { right: 58.333333333333%; }
+  .cute-8-tablet-pull { right: 66.666666666667%; }
+  .cute-9-tablet-pull { right: 75%; }
+  .cute-10-tablet-pull { right: 83.333333333333%; }
+  .cute-11-tablet-pull { right: 91.666666666667%; }
+
+  .center-tablet {
+    margin-left: auto;
+    margin-right:auto;
+    float:none !important;
+  }
+  .uncenter-tablet {
+    margin-left: 0;
+    margin-right: 0;
+    float:left !important;
+  }
+  .uncenter-tablet.right {
+    float:right !important;
+  }
+
+  [class*='cute-'].tablet-reset {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; }
+}
+/* Grid classes for wide Tablet / Laptop to Small Desktop Size */
+
+@media only screen and (min-width: 62em) {
+  .cute-1-laptop { width: 8.3333333333333%; }
+  .cute-2-laptop { width: 16.666666666667%; }
+  .cute-3-laptop { width: 25%; }
+  .cute-4-laptop { width: 33.333333333333%; }
+  .cute-5-laptop { width: 41.666666666667%; }
+  .cute-6-laptop { width: 50%; }
+  .cute-7-laptop { width: 58.333333333333%; }
+  .cute-8-laptop { width: 66.666666666667%; }
+  .cute-9-laptop { width: 75%; }
+  .cute-10-laptop { width: 83.333333333333%; }
+  .cute-11-laptop { width: 91.666666666667%; }
+  .cute-12-laptop { width: 100%; }
+
+  /* offset for tablet laptop widths */
+  .cute-0-laptop-offset { margin: 0; }
+  .cute-1-laptop-offset { margin-left: 8.3333333333333%; }
+  .cute-2-laptop-offset { margin-left: 16.666666666667%; }
+  .cute-3-laptop-offset { margin-left: 25%; }
+  .cute-4-laptop-offset { margin-left: 33.333333333333%; }
+  .cute-5-laptop-offset { margin-left: 41.666666666667%; }
+  .cute-6-laptop-offset { margin-left: 50%; }
+  .cute-7-laptop-offset { margin-left: 58.333333333333%; }
+  .cute-8-laptop-offset { margin-left: 66.666666666667%; }
+  .cute-9-laptop-offset { margin-left: 75%; }
+  .cute-10-laptop-offset { margin-left: 83.333333333333%; }
+  .cute-11-laptop-offset { margin-left: 91.666666666667%; }
+
+  .cute-1-laptop-push { left: 8.3333333333333%; }
+  .cute-2-laptop-push { left: 16.666666666667%; }
+  .cute-3-laptop-push { left: 25%; }
+  .cute-4-laptop-push { left: 33.333333333333%; }
+  .cute-5-laptop-push { left: 41.666666666667%; }
+  .cute-6-laptop-push { left: 50%; }
+  .cute-7-laptop-push { left: 58.333333333333%; }
+  .cute-8-laptop-push { left: 66.666666666667%; }
+  .cute-9-laptop-push { left: 75%; }
+  .cute-10-laptop-push { left: 83.333333333333%; }
+  .cute-11-laptop-push { left: 91.666666666667%; }
+
+  .cute-1-laptop-pull { right: 8.3333333333333%; }
+  .cute-2-laptop-pull { right: 16.666666666667%; }
+  .cute-3-laptop-pull { right: 25%; }
+  .cute-4-laptop-pull { right: 33.333333333333%; }
+  .cute-5-laptop-pull { right: 41.666666666667%; }
+  .cute-6-laptop-pull { right: 50%; }
+  .cute-7-laptop-pull { right: 58.333333333333%; }
+  .cute-8-laptop-pull { right: 66.666666666667%; }
+  .cute-9-laptop-pull { right: 75%; }
+  .cute-10-laptop-pull { right: 83.333333333333%; }
+  .cute-11-laptop-pull { right: 91.666666666667%; }
+
+  .center-laptop {
+    margin-left: auto;
+    margin-right:auto;
+    float:none !important;
+  }
+  .uncenter-laptop {
+    margin-left: 0;
+    margin-right: 0;
+    float:left !important;
+  }
+  .uncenter-laptop.right {
+    float:right !important;
+  }
+
+  [class*='cute-'].laptop-reset {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; }
+}
+
+/* Grid Classes for Large Desktop Size */
+.show-desktop { display: none; }
+@media only screen and (min-width: 75em) {
+  .cute-1-desktop { width: 8.3333333333333%; }
+  .cute-2-desktop { width: 16.666666666667%; }
+  .cute-3-desktop { width: 25%; }
+  .cute-4-desktop { width: 33.333333333333%; }
+  .cute-5-desktop { width: 41.666666666667%; }
+  .cute-6-desktop { width: 50%; }
+  .cute-7-desktop { width: 58.333333333333%; }
+  .cute-8-desktop { width: 66.666666666667%; }
+  .cute-9-desktop { width: 75%; }
+  .cute-10-desktop { width: 83.333333333333%; }
+  .cute-11-desktop { width: 91.666666666667%; }
+  .cute-12-desktop { width: 100%; }
+
+  /* offset for tablet laptop widths */
+  .cute-0-desktop-offset { margin: 0; }
+  .cute-1-desktop-offset { margin-left: 8.3333333333333%; }
+  .cute-2-desktop-offset { margin-left: 16.666666666667%; }
+  .cute-3-desktop-offset { margin-left: 25%; }
+  .cute-4-desktop-offset { margin-left: 33.333333333333%; }
+  .cute-5-desktop-offset { margin-left: 41.666666666667%; }
+  .cute-6-desktop-offset { margin-left: 50%; }
+  .cute-7-desktop-offset { margin-left: 58.333333333333%; }
+  .cute-8-desktop-offset { margin-left: 66.666666666667%; }
+  .cute-9-desktop-offset { margin-left: 75%; }
+  .cute-10-desktop-offset { margin-left: 83.333333333333%; }
+  .cute-11-desktop-offset { margin-left: 91.666666666667%; }
+
+  .cute-1-desktop-push { left: 8.3333333333333%; }
+  .cute-2-desktop-push { left: 16.666666666667%; }
+  .cute-3-desktop-push { left: 25%; }
+  .cute-4-desktop-push { left: 33.333333333333%; }
+  .cute-5-desktop-push { left: 41.666666666667%; }
+  .cute-6-desktop-push { left: 50%; }
+  .cute-7-desktop-push { left: 58.333333333333%; }
+  .cute-8-desktop-push { left: 66.666666666667%; }
+  .cute-9-desktop-push { left: 75%; }
+  .cute-10-desktop-push { left: 83.333333333333%; }
+  .cute-11-desktop-push { left: 91.666666666667%; }
+
+  .cute-1-desktop-pull { right: 8.3333333333333%; }
+  .cute-2-desktop-pull { right: 16.666666666667%; }
+  .cute-3-desktop-pull { right: 25%; }
+  .cute-4-desktop-pull { right: 33.333333333333%; }
+  .cute-5-desktop-pull { right: 41.666666666667%; }
+  .cute-6-desktop-pull { right: 50%; }
+  .cute-7-desktop-pull { right: 58.333333333333%; }
+  .cute-8-desktop-pull { right: 66.666666666667%; }
+  .cute-9-desktop-pull { right: 75%; }
+  .cute-10-desktop-pull { right: 83.333333333333%; }
+  .cute-11-desktop-pull { right: 91.666666666667%; }
+
+  .center-desktop {
+    margin-left: auto;
+    margin-right:auto;
+    float:none !important;
+  }
+  .uncenter-desktop {
+    margin-left: 0;
+    margin-right: 0;
+    float:left !important;
+  }
+  .uncenter-desktop.right {
+    float:right !important;
+  }
+
+  [class*='cute-'].desktop-reset {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left; }
+}
+
+@media only screen and (max-width: 30em){
+    .cute-100 { width:100%;}
+}
+
+/* Make visible or hidden block elements */
+
+  .show-phone { display: none !important; }
+  .hide-phone { display: block !important; }
+@media only screen and (max-width: 47.938em) {
+  
+  .phone { width: 100%; }
+  .hide-phone { display:none !important; }
+  .show-phone { display: block !important; }
+}
+
+  .show-tablet { display: none !important; }
+  .hide-tablet { display: block !important; }
+@media only screen and (min-width: 48em) and (max-width: 61.938em) { 
+  
+  .hide-tablet { display: none !important; }
+  .show-tablet { display: block !important; }
+
+}
+  .show-laptop { display: none !important; }
+  .hide-laptop { display: block !important; }
+@media only screen and (min-width: 62em) and (max-width: 74.938em) { 
+
+  .hide-laptop { display: none !important; }
+  .show-laptop { display: block !important; }
+}
+
+  .show-desktop { display: none !important; }
+  .hide-desktop { display: block !important; }
+@media only screen and (min-width: 75em) { 
+  .hide-desktop { display: none !important; }
+  .show-desktop { display: block !important; } 
+}
+
+/* make images responsive */
+.responsive-img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+/* Optional Extras */
+
+/* something to keep tables horizontal with scroll when on small screen 
+*  Useful if table is wide. Set media query to point where table needs it
+*/ 
+/*
+@media only screen and (max-width: 47.938em) {
+  .table-respond {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+}
+*/
+
