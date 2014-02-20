@@ -55,9 +55,11 @@ For full instructions using Cute Grids visit [www.cutegrids.com](http://www.cute
 
 ##Support
 
-If you hevve any questions or need some support using Cute Grids then please feel free to contact me.
+If you have any questions or need some support using Cute Grids then please feel free to contact me.
 
-[darren@dazzyweb.com](mailto:darren@dazzyweb.com)
+Email: [contact@dazzyweb.com](mailto:contact@dazzyweb.com)
+
+or connect with me on twitter [@dazzy_web](https://twitter.com/dazzy_web)
 
 ##Copyright & License
 
