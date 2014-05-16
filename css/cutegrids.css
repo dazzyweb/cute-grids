@@ -376,33 +376,25 @@
 
 /* Make visible or hidden block elements */
 
-  .show-phone { display: none !important; }
+  .show-phone, .show-tablet, .show-laptop, .show-desktop { display: none !important; }
   .hide-phone { display: block !important; }
+
 @media only screen and (max-width: 47.938em) {
-  
   .phone { width: 100%; }
   .hide-phone { display:none !important; }
   .show-phone { display: block !important; }
 }
-
-  .show-tablet { display: none !important; }
-  .hide-tablet { display: block !important; }
+ 
 @media only screen and (min-width: 48em) and (max-width: 61.938em) { 
-  
   .hide-tablet { display: none !important; }
   .show-tablet { display: block !important; }
-
 }
-  .show-laptop { display: none !important; }
-  .hide-laptop { display: block !important; }
+  
 @media only screen and (min-width: 62em) and (max-width: 74.938em) { 
-
   .hide-laptop { display: none !important; }
   .show-laptop { display: block !important; }
 }
 
-  .show-desktop { display: none !important; }
-  .hide-desktop { display: block !important; }
 @media only screen and (min-width: 75em) { 
   .hide-desktop { display: none !important; }
   .show-desktop { display: block !important; } 
